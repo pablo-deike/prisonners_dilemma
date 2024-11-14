@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 class Strategy(ABC):
 
     @abstractmethod
-    def play(self, last_plays: list) -> bool:
+    def play(self) -> None:
         pass
 
     @abstractmethod

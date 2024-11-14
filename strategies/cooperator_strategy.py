@@ -1,10 +1,14 @@
-from strategies.no_memory_strategy import NoMemoryStrategy
+from include.player import Player
+from strategies.strategy import Strategy
 
 
-class CooperatorStrategy(NoMemoryStrategy):
+class CooperatorStrategy(Strategy):
 
-    def play(self, last_plays) -> bool:
-        return False
+    def __init__(self, player: Player):
+        self.player = player
+
+    def play(self) -> None:
+        self.player.play(False)
 
     def __str__(self) -> str:
         return "Unconditional cooperator"
