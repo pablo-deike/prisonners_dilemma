@@ -5,7 +5,7 @@ class Player:
 
     def __init__(self, strategy: Strategy):
         self.points = 0
-        self.conflict = False
+        self.defects = False
         self.strategy = strategy
         self.plays = []
 
@@ -14,7 +14,7 @@ class Player:
 
     def play(self, plays: list) -> None:
         if len(self.plays) == 0:
-            self.plays.append(self.conflict)
+            self.plays.append(self.defects)
             return
-        self.conflict = self.strategy.play(last_plays=plays)
-        self.plays.append(self.conflict)
+        self.defects = self.strategy.play(last_plays=plays)
+        self.plays.append(self.defects)
