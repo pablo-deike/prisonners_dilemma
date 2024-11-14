@@ -1,5 +1,5 @@
-from player import Player
-from points_decider import points_decider
+from include.player import Player
+from include.points_decider import points_decider
 from strategies.random_strategy import RandomStrategy
 from strategies.tit_for_tat_strategy import TitForTatStrategy
 
