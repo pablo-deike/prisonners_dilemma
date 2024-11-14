@@ -5,9 +5,9 @@ import random
 
 class RandomStrategy(NoMemoryStrategy):
 
-    def play(self, last_plays: list) -> bool:
+    def play(self) -> bool:
         return random.uniform(0, 1) <= 0.5
 
-    def __str__(self):
+    def __str__(self) -> str:
         super().__str__()
         return "Random"

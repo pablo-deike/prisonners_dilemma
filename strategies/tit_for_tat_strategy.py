@@ -8,6 +8,6 @@ class TitForTatStrategy(Strategy):
             return True
         return False
 
-    def __str__(self):
+    def __str__(self) -> str:
         super().__str__()
         return "Tit for tat"

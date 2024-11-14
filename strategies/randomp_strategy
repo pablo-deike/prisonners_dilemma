@@ -8,9 +8,9 @@ class RandomPStrategy(NoMemoryStrategy):
     def __init__(self):
         self.probability = random.uniform(0, 1)
 
-    def play(self, last_plays: list) -> bool:
+    def play(self) -> bool:
         return random.uniform(0, 1) <= self.probability
 
-    def __str__(self):
+    def __str__(self) -> str:
         super().__str__()
         return "Random"
