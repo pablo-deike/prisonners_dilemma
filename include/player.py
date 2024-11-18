@@ -7,6 +7,7 @@ class Player:
         self.points = 0
         self.defects = False
         self.plays = []
+        self.got_defected = False
 
     def add_points(self, points: int) -> None:
         self.points += points

@@ -13,11 +13,10 @@ class TitForTatStrategy(Strategy):
         if len(self.player.plays) == 0:
             self.player.play(False)
             return
-        if self.player.plays[-1] is True:
+        if self.player.got_defected is True:
             self.player.play(True)
             return
         self.player.play(False)
-        return
 
     def get_final_score(self, points: int) -> None:
         self.scores.append(points)
