@@ -8,5 +8,13 @@ class Strategy(ABC):
         pass
 
     @abstractmethod
+    def get_final_score(self, points: int) -> None:
+        pass
+
+    @abstractmethod
+    def get_average_scores(self) -> None:
+        pass
+
+    @abstractmethod
     def __str__(self) -> str:
         pass

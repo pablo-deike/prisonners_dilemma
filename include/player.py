@@ -14,3 +14,7 @@ class Player:
     def play(self, defect: bool) -> None:
         self.defects = defect
         self.plays.append(self.defects)
+
+    def reset_player(self) -> None:
+        self.points = 0
+        self.plays = []
