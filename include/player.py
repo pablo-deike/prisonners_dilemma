@@ -7,7 +7,7 @@ class Player:
         self.points = 0
         self.defects = False
         self.plays = []
-        self.got_defected = False
+        self.opposing_plays = []
 
     def add_points(self, points: int) -> None:
         self.points += points
@@ -16,6 +16,10 @@ class Player:
         self.defects = defect
         self.plays.append(self.defects)
 
+    def add_opposing_plays(self, defect: bool) -> None:
+        self.opposing_plays.append(defect)
+
     def reset_player(self) -> None:
         self.points = 0
         self.plays = []
+        self.opposing_plays = []
