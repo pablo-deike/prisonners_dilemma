@@ -1,6 +1,6 @@
 import random
 
-from include.player import Player
+from player.player import Player
 from strategies.strategy import Strategy
 
 

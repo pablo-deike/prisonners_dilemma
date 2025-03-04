@@ -1,5 +1,5 @@
 from typing import Optional
-from include.player import Player
+from player.player import Player
 
 import random
 

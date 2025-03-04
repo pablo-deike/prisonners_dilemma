@@ -1,5 +1,5 @@
-from include.player import Player
-from include.points_decider import points_decider
+from player.player import Player
+from player.points_decider import points_decider
 from strategies.strategy import Strategy
 from get_all_strategies import get_all_strategies
 

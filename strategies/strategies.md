@@ -7,7 +7,7 @@
 - Probability p Cooperator: Cooperates or defects with probability p
 - Tit for tat: Cooperates on the first round and imitates its opponent's previous move thereafter.
 - Suspicious Tit for Tat: Defects on the first round and imitates its opponent's previous move thereafter.
-- Generous Tit for Tat: Cooprates on the first round and after its opponent cooperates. Following a defection,it cooperates with probability $g(R,P,T,S)=min \{{1-\frac{T-R}{R-S},\frac{R-P}{T-P}}\}$ where R, P, T and S are the reward, punishment, temptation and sucker payoffs.
+- Generous Tit for Tat: Cooperates on the first round and after its opponent cooperates. Following a defection,it cooperates with probability $g(R,P,T,S)=min \{{1-\frac{T-R}{R-S},\frac{R-P}{T-P}}\}$ where R, P, T and S are the reward, punishment, temptation and sucker payoffs.
 - Tit for Two Tats: Cooperates unless defected against twice in a row.
 - Two tits for tat: Defects twice after being defected against, otherwise cooperates.
 - GRIM: Cooperates until its opponent has defected once, and then defects for the rest of the game.

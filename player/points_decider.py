@@ -1,4 +1,4 @@
-from include.player import Player
+from player.player import Player
 
 
 def points_decider(player_1: Player, player_2: Player) -> None:
