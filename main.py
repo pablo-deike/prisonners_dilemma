@@ -17,7 +17,11 @@ def play() -> None:
         strategy.get_average_scores()
         final_scores[str(strategy)] = strategy.avg_score
         print(f"{strategy} final score: {strategy.scores}\n")
-    print(final_scores)
+
+    sorted_scores = dict(
+        sorted(final_scores.items(), key=lambda item: item[1], reverse=True)
+    )
+    print(sorted_scores)
 
 
 def simulate(strategy_1: Strategy, strategy_2: Strategy, rounds: int) -> None:
